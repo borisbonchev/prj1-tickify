@@ -1,0 +1,155 @@
+/*SEARCH TAB 
+*/
+.searchtab {
+  font-size: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  border: 2px solid black;
+  opacity: 55%;
+  width: 20%;
+  padding-left: 0.5%;
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+}
+.fa fast-search {
+ transform: translateX(-500%);
+}
+.search_bar {
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_bar__input {
+  width: 50rem;
+  height: 5rem;
+  padding-left: 10px;
+}
+
+.search_bar__input:focus-visible {
+  outline: auto hsl(37, 84%, 55%);
+}
+
+.search_bar i {
+  font-size: 2rem;
+  transform: translateX(-160%);
+  cursor: pointer;
+}
+
+.search_bar__input:focus-visible ~ i {
+  color: hsl(37, 84%, 55%);
+}
+
+/* BODY */
+body {
+  background: linear-gradient(hsl(31, 67%, 52%), hsl(37, 84%, 55%));
+}
+
+/* TEXT CONTAINER + CONTENTS INSIDE */
+.grid {
+  grid-template-columns: 30% 30% 30%;
+  display: grid;
+  background-color: #df7a1b;
+  grid-gap: 5%;
+  margin-top: 2%;
+}
+.container {
+  text-align: left;
+  margin: 2%;
+  font-size: 25px;
+}
+.main {
+  text-align: center;
+  font-size: 70px;
+  padding: bottom 15%;
+}
+.eventpic {
+  width: 75%;
+  height: 350px;
+  border: 10 solid black;
+  margin-left: 2%;
+  display: block;
+  margin-top: 5%;
+  margin-left: 12%;
+  margin-bottom: 2%;
+  border-radius: 45px;
+  padding-top: 20px;
+}
+.grid-heading {
+  color:hsl(0, 0%, 85%);
+  background-color: hsl(31, 67%, 52%);
+  padding: 0.5rem;
+  text-shadow: 0 2px 5px hsl(0, 0%, 20%);
+  text-align: center;
+  font-size: 45px;
+}
+.description {
+  text-align: left;
+  font-size: 17px;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: "Courgette", cursive;
+  margin-bottom: auto;
+}
+.container-text {
+  border-radius: 35px;
+  font-size: 30px;
+  width: 80%;
+  background-color: #d9d9d9;
+  border: 2px black;
+  opacity: 0.95;
+  margin-left: 10%;
+  margin-right: 25%;
+  height: 880px;
+  box-shadow: 0 2px 5px hsl(0, 0%, 20%);
+}
+
+/*
+      buy-ticket button design
+      */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  width: 230px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.info-bottom {
+  text-align: center;
+}

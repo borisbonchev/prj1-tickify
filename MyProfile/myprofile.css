@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Header (My Profile) */
+.section-header {
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: 25px;
+}
+
+/* Simple Grid */
+.columns {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 50px;
+}
+
+/* Left-Side Grid */
+.profile-picture-section {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+    padding-right: 5%;
+    background-color: #d9d9d9;
+}
+
+/* Profile Picture */
+.profile-picture {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+/* Right-Side Grid */
+.user-info-section {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+    font-size: 15px;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left;
+    background-color: #d9d9d9;
+}
+
+/* Last Name Row */
+.last-name {
+    margin-top: 45px;
+}
+
+/* Username Row */
+.username-section {
+    margin-top: 45px;
+}
+
+/* All the content that stands on the left (Right-Side Grid) */
+.left-side-content {
+    position: absolute;
+}
+
+/* Description Content (Pushed to the right) */
+.right-side-content { 
+    position: absolute;
+    margin-left: 200px;
+    width: 40%;
+}
+
+/* Email Row */
+.email-section {
+    margin-top: 45px;
+}
+
+/* Description Row */
+.description-section {
+    margin-top: 45px;
+}
+
+/* Birthday Section (2 Rows) */
+.birthday-section {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+/* Birthday Second Row */
+.birthday-smalltext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+/* Account Type Section (2 Rows) */
+.account-type-section {
+    display: inline-block;
+    margin-top: 4%;
+    margin-left: 7%;
+    width: 85%;
+}
+
+/* Account Type Second Row */
+.account-type-smalltext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 1%;
+    margin-left: 0.5%;
+}
+
+/* "Edit Profile" Button + Hover */
+.edit-information-button {
+    padding: 5px 15px;
+    border: 1px solid #FFFFFF;
+    margin-left: 7%;
+    margin-top: 4%;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+    float: left;
+}
+
+.edit-information-button:hover {
+    color: white;
+    background-color: orange;
+}

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* File Default font size */
+html {
+    font-size: 10px;
+}
+
+/* Body Image + Font */
+body {
+    background-image: url(music-event.jpg);
+    background-size: cover;
+    font-family: 'Times New Roman', cursive;
+}
+
+/* Page Title */
+.section-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+}
+
+/* Searchbar */
+.search-bar {
+    font-size: 20px;
+    transform:translateX(-50%);
+    margin-left: 50%;
+    margin-bottom: 2%;
+    border: orangered 2px solid;
+    background-color: #d9d9d9;
+    opacity: 95%;
+    margin-top: 1%;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+}
+
+.search-bar:hover {
+    background-color: #d9d9d9;
+}
+
+/* Rounded searchbar (Scrapped Idea) */
+/* .round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+} */
+
+/* Searchbar Input */
+/* .search-bar input[type=text] {
+    border: 1px solid orangered;
+} */
+
+/* Approve Container */
+.approve-container {
+    font-size: 16px;
+    line-height: 35px;
+    height: 100px;
+    padding: 30px;
+    border: 1px solid orangered;
+    margin: 25px;
+    margin-bottom: 37px;
+    background-color: white;
+    opacity: 0.95;
+}
+
+/* Bottom Container */
+.approve-container-bottom {
+    font-size: 16px;
+    line-height: 35px;
+    height: 100px;
+    padding: 30px;
+    border: 1px solid orangered;
+    margin: 25px;
+    margin-bottom: 50px;
+    background-color: white;
+    opacity: 0.95;
+}
+
+/* .approve-container div {
+    height: 20px;
+    display: block;
+    font-weight: 100;
+    width: 320px;
+} */
+
+/* Approve Container Sections */
+.date-container, .eventInfo-container, .approve-button-container, .date-container-time {
+    height: 20px;
+    box-sizing: border-box;
+}
+
+/* Date Section */
+.date-container {
+    width: 15%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 auto;
+    float: left;
+    display: grid;
+    grid-template-rows: 20px 20px 1fr 1fr;
+}
+
+/* Event Info Section */
+.eventInfo-container {
+    width: 50%;
+    float: left;
+}
+
+/* Buttons Section */
+.approve-button-container {
+    width: 35%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: left;
+}
+
+/* Reminder: This shit doesn't work :^) */
+.date-container-time {
+    width: auto;
+    height: 20px;
+    float: left;
+    position: relative;
+    grid-row-end: auto;
+}
+
+/*.approve-button {
+    float: right;
+    margin: 5px;
+    height: 30px;
+    font-size: 17px;
+    background-color: white;
+}*/
+
+/* Container Approve/Decline Buttons */
+.approve-button {
+    float: right;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif; 
+    font-weight: 400;   
+    font-size: 15px;
+    text-align: center;
+}
+
+.approve-button-color {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+/* Buttons Hover */
+.approve-button:hover {
+    border-color: orange;
+}
+.approve-button:active {
+    background-color:#999999;
+}
+
+/* Open Event Button + Hover */
+.open-event {
+    padding: 5px 15px;
+    border: 1px solid #FFFFFF;
+    margin: 5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+    float: right;
+}
+.open-event:hover {
+color: white;
+background-color: orange;
+}
+
+.footer-class {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
